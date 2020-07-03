@@ -68,8 +68,6 @@ public class TestSuiteByExcel {
 		}catch(Exception e){
 			Assert.fail("执行出现异常，测试用例执行失败！");
 		}
-		
-		
 	}
 	
 }

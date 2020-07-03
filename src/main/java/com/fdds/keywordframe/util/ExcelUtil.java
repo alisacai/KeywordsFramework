@@ -74,7 +74,7 @@ public class ExcelUtil {
 	public static void setCellData(String sheetName, int rowNum, int colNum, String result) throws IOException {
 		sheet = workbook.getSheet(sheetName);
 		row = sheet.getRow(rowNum);
-		cell = row.getCell(colNum, Row.RETURN_BLANK_AS_NULL);
+		cell = row.getCell(colNum, Row.MissingCellPolicy.RETURN_BLANK_AS_NULL);
 		if (cell == null) {
 			cell = row.createCell(colNum);
 			cell.setCellValue(result);

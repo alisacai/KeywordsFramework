@@ -3,7 +3,7 @@ package com.fdds.keywordframe.configuration;
 public class Constant {
 
 	//测试数据相关常量设定
-	public static final String Path_ExcelFile = "\\data\\KeyWordsActionTestCases.xlsx";
+	public static final String Path_ExcelFile = "src\\main\\java\\com\\fdds\\keywordframe\\data\\KeyWordsActionTestCases.xlsx";
 	public static final String Path_ConfigurationFile = "ObjectMap.properties";
 	
 	//测试数据Sheet中的列号常量设定

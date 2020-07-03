@@ -9,6 +9,7 @@ import com.fdds.keywordframe.util.ObjectMap;
 import com.fdds.keywordframe.util.WaitUtil;
 
 
+import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -32,7 +33,7 @@ public class KeyWordsAction {
 			driver = new InternetExplorerDriver();
 			Log.info("IE浏览器实例已经声明");
 		}else if(browserName.equals("Chrome")){
-			System.setProperty("webdriver.chrome.driver","E:\\Selenium\\BrowserDriver\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","src\\main\\java\\com\\fdds\\keywordframe\\TestDriven\\chromedriver.exe");
 			driver = new ChromeDriver();
 			Log.info("Chrome浏览器实例已经声明");
 		}else if(browserName.equals("Firefox")){
